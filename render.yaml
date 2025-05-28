@@ -2,6 +2,6 @@ services:
   - type: web
     name: webhook-trader
     env: python
-    plan: free
     buildCommand: pip install -r requirements.txt
     startCommand: python trading.py
+    autoDeploy: true
